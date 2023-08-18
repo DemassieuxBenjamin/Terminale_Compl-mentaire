@@ -1,0 +1,203 @@
+\documentclass[10pt,a4paper,landscape]{article}
+\pagestyle{empty}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=0.2cm,noheadfoot]{geometry}
+\usepackage[french]{babel}
+\usepackage{amssymb} % Pour les symboles mathématiques spéciaux
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{lipsum} % Pour générer du texte de remplissage
+\usepackage{multicol} % Pour créer des colonnes
+\usepackage{array}  % Pour les ajustements de colonnes de tableau
+\usepackage{colortbl} % Pour les couleurs de fond des cellules
+\usepackage{hhline} % Pour des lignes plus flexibles dans les tableaux
+\usepackage{tkz-tab} % Pour faire tableauxx de signes et variations
+
+\usepackage{graphicx}
+
+
+\renewcommand{\arraystretch}{2.3} % Ajuste l'espacement vertical des lignes du tableau
+
+\begin{document}
+		\begin{tabular}{|p{6.5cm}|p{6.5cm}||p{6.5cm}|p{6.5cm}|}
+			\hline
+			\multicolumn{4}{|c|}{Thème 1 : Modèles définis par une fonction / Fiche de mémorisation n°1 || Fiche de mémorisation n°1 / Thème 1 : Modèles définis par une fonction}\\
+			\hline
+			\begin{center}\uppercase{je m'interroge}\end{center}&
+			\begin{center}\uppercase{je me corrige}\end{center}&
+			\begin{center}\uppercase{je m'entraîne}\end{center}& 
+			\begin{center}\textbf{A COLLER}\cellcolor{gray!25}\end{center} \\
+			\hline
+			% Question 1 & Réponse 1 & Exercice 1 & A COLLER
+			Question 1 :
+			Comment calculer la dérivée d'une fonction composée ? &
+			Réponse 1 :
+			On applique les formules de dérivations suivante: $(u^n)'=nu'u^{n-1} ; (e^u)'=u'e^u ; (\sqrt{u})'= \frac{u'}{2\sqrt{u}}$ &
+			Exercice 1: Soit $f$, $g$ les fonctions définies sur  une fonction sur $\mathbb{R}$ et $h$ la fonction définie sur $[2 ; +\infty[$ par $f(x)=(1-8x)^3 , g(x)=e^{2x+3}$ et $h(x)=\sqrt{2x-4}$ Déterminer la dérivée de chacune des fonctions &
+			\cellcolor{gray!25} \\
+			\hline
+			
+			% Question 2 & Réponse 2 & Exercice 2 & A COLLER
+			Question 2 : Comment construite le tableau de variation d'une fonction ? &
+			Réponse 2 : On calcule  la fonction dérivée puis on étudie son signe. Pour présenter le résultat, on utilise un tableau de signe pour en déduire facilement le tableau de variation. &
+			Exercice 2 : Soit $f$ la fonction définie sur $I= \mathbb{R} \backslash \lbrace4\rbrace$ par $f(x)=\frac{2x-3}{x+4}$. Dresser le tableau de variation de $f$ sur $I$ & 
+			\cellcolor{gray!25}\\
+			\hline
+			
+			% Question 3 & Réponse 3 & Exercice 3 & A COLLER
+			Question 3 : Comment déterminer les extrema d'une fonction? &
+			Réponse 3 : Pour déterminer les extrama (minimum et/ou maximum), on utilise de le tableau de variation de la fonction. &
+			Exercice 3 : Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=e^{x^2}$. Déterminer les extrema de $f$. &
+			\cellcolor{gray!25}\\
+			\hline
+			
+			% Question 4 & Réponse 4 & Exercice 4 & A COLLER
+			Question 4 : Comment déterminer des valeurs approchées des solutions d'une équation du type $f(x)=k$ &
+			Réponse 4 : On applique le théorème des valeurs intermédiaires TVI (voir fiche méthode)&
+			Exercice 4 : Soit $f$ une fonction définie sur $[-2;1]$  par $f(x)=e^{3x}-3x+1$. Donner une valeur approchée au centième de chacune des solutions de l'équation $f(x)=3$ &
+			\cellcolor{gray!25} \\
+			\hline
+			
+			%Question 5 & Réponse 5 & Exercice 5 & A COLLER
+			Questions 5 : Comment déterminer la dérivée seconde d'une fonction ? &
+			Réponse 5 : On déterminer la dérivée de la fonction dérivée.  On la note $f''$&
+			Exercice 5 : Soit $f$ une fonction définie sur $\mathbb{R}$ par $f(x)=x^4-3x+2$. Déterminer la dérivée seconde de la fonction $f$.& 
+			\cellcolor{gray!25}\\
+			\hline
+			
+			% Question 6 & Réponse 6 & Exercice 6 & A COLLER
+			Question 6 : Comment reconnaitre la convexité d'une fonction ? &
+			Réponse 6 : Une fonction est convexe si sa dérivée seconde est positive &
+			Exercice 6 : Soit $f$ une fonction définie sur $\mathbb{R}$ par $f(x)=0.5x^2+2x-1$. Justifier que $f$ est convexe sur $\mathbb{R}$. &
+			\cellcolor{gray!25}\\
+			\hline
+			
+			% Question 7 et Réponse 7 & Exercice 7 & A COLLER
+			Question 7 : Comment reconnaitre la concavité d'une fonction ? &
+			Réponse 7 : Une fonction est concave si sa dérivée seconde est négative&
+			Exercice 7 : Soit $f$ une fonction définie sur $\mathbb{R}$ par $f(x)=-0.5x^2-x+3.5$. Justifier que $f$ est concave sur $\mathbb{R}$.&
+			\cellcolor{gray!25}\\
+			\hline
+			
+			% Question 8 et Réponse 8 & Exercice 8 & A COLLER
+			Question 8 : Comment déterminer un point d'inflexion d'une fonction? &
+			Réponse 8 : il doit y avoir un changement signe de sa fonction dérivée &
+			Exercice 8 : Soit $f$ une fonction définie sur $I=[-1 ; 8]$ par $f(x)=\frac{5x}{(x+2)^2}$. En quel point la courbe de la fonction $f$ admet-elle un point d'inflexion?. &
+			\cellcolor{gray!25}\\
+			\hline	
+		 \end{tabular}
+		 
+\begin{minipage}[t][21cm]{13cm}
+		\begin{center}
+			\uppercase{je m'auto-évalue et je consolide}
+		\end{center}
+	Note la date puis refais cette fiche régulièrement.  
+	\begin{center}
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			J & \ldots / \ldots / \ldots   \\
+			\hline
+			J+3 jours  & \ldots / \ldots / \ldots  \\
+			\hline
+			J+7 jours  & \ldots / \ldots / \ldots  \\
+			\hline
+			J+14 jours & \ldots / \ldots / \ldots   \\
+			\hline
+			J+21 jours & \ldots / \ldots / \ldots  \\
+			\hline
+			J+1 mois   & \ldots / \ldots / \ldots   \\
+			\hline
+		\end{tabular}
+	\end{center}
+Puis complète les secteurs de la cible de la façon suivante : 
+\begin{itemize}
+	\item Colorier en VERT si tu as bien répondu à la question ET si tu as réussi l’exercice associée à la question.
+	\item Colorier en ORANGE si tu as bien répondu à la question OU si tu as réussi l’exercice associée à la question.
+	\item Colorier en ROUGE si tu n’as pas répondu à la question ET si tu n’as pas réussi l’exercice associée à la question.
+\end{itemize}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+	\foreach \r in {1,2,3,4,5} {
+		\draw (0, 0) circle (\r);
+		\foreach \a [count=\n)] in {0,45,90,135,180,225,270,315} {
+			\draw (0, 0) -- (\a:\r);
+			\node[align=center, transform shape] at (\a+22.5:\r-0.5) {\n};
+		}
+	}
+\end{tikzpicture}	
+\end{center}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[t][21cm]{13cm}
+		\begin{center}
+			\uppercase{Je rectifie mes erreurs}
+		\end{center}
+	\textbf{Correction Exercice 1 :} les fonctions sont dérivables sur leur ensemble de définition.
+	\begin{multicols}{3}
+	%$f'(x)=3 \times (-8) \times (1-8x)^2$\\
+	$f'(x)=-24(1-8x)^2$
+	\columnbreak % Passe à la deuxième colonne
+	$g'(x)=2e^{2x+3}$
+	\columnbreak % Passe à la troisième colonne
+	%$h'(x)=\frac{2}{2\sqrt{2x-4}}$\\
+	$h'(x)=\frac{1}{\sqrt{2x-4}}$
+	\end{multicols}
+
+	\begin{multicols}{2}
+	\textbf{Correction Exercice 2 :}La fonction $f$ est dérivable sur I. On remarque la forme $(\frac{u}{v})'=\frac{u'v-uv'}{v^2}$
+	On pose $u=2x-3$ et $v=x+4$. On en déduit $u'=2$ et $v'=1$
+	\[f'(x)=\frac{2(x+4)-(2x-3)}{(x+4)^2}\]
+	\[f'(x)=\frac{11}{(x+4)^2}\]
+	\columnbreak 
+	\begin{tikzpicture}[scale=0.6]
+		\tkzTabInit{$x$ /1, $\frac{11}{(x+4)^2}$ /1, $f'(x)$ /1, $f(x)$ /1.5}{$-\infty$, 4, $+\infty$}
+		\tkzTabLine{, +,d,+, }
+		\tkzTabLine{, +,d,+, }
+		\tkzTabVar{-/,+D-/, +/}
+	\end{tikzpicture}
+	\end{multicols}
+	
+	
+	\begin{multicols}{2}
+	\textbf{Correction Exercice 3 :}On remarque la forme $(e^{u})'=u'e^{u}$.
+	On en déduit $f'(x)=2xe^{x^2}$. Comme pour tout nombres réels $x$, $e^{x^2}>0$. Le signe de $f'$ dépend donc du signe de $2x$.
+	A la lecture du tableau, La fonction f admet un minimun en $0$, il est de 1.\\
+	\columnbreak 
+	\begin{tikzpicture}[scale=0.6]
+		\tkzTabInit{$x$ /1, $2x$ /1, $f'(x)$ /1, $f(x)$ /1.5}{$-\infty$, 0, $+\infty$}
+		\tkzTabLine{, -,z,+, }
+		\tkzTabLine{, -,z,+, }
+		\tkzTabVar{+/, -/1, +/}
+	\end{tikzpicture}
+	\end{multicols}
+	
+	\begin{multicols}{2}
+	\textbf{Correction Exercice 4 :} $f'(x)=3e^{3x}-3 = 3(e^{3x} -1)$
+	Comme 3 est compris entre 2 et 7 et 3 est compris entre 2 et 18. On en déduit que l'équation $f(x)=3$ admet 2 solutions sur l'intervalle $[-2 ; 1]$
+	\columnbreak 
+	\begin{tikzpicture}[scale=0.6]
+		\tkzTabInit{$x$ /1, $e^{3x}-1$ /1, $f'(x)$ /1, $f(x)$ /1.5}{$-2$, 0, $1$}
+		\tkzTabLine{, -,z,+, }
+		\tkzTabLine{, -,z,+, }
+		\tkzTabVar{+/ 7, -/2, +/18}
+	\end{tikzpicture}
+	\end{multicols}
+	
+	\textbf{Correction Exercice 5 :} Soit $f(x)=x^4-3x+2$ ; $f'(x)=4x^3-3$ ; $f''(x)=12x^2$
+	
+	\textbf{Correction Exercice 6 :} Soit $f(x)=0.5x^2+2x-1$ ; $f'(x)=x+2$ ; $f''(x)=1$. Pour tous nombres réels $f''(x)>0$. on en déduit que la fonction $f$ est convexe.
+	
+	\textbf{Correction Exercice 7 :}Soit $f(x)=-0.5x^2-x+3.5$ ; $f'(x)=-x-1$ ; $f''(x)=-1$. Pour tous nombres réels $f''(x)<0$. On en déduit que la fonction $f$ est convexe.
+	\begin{multicols}{2}
+	\textbf{Correction Exercice 8 :}On a :\\ $f'(x)=\frac{10-5x}{(x+2)^3}$. et $f''(x)=\frac{10x-40}{(x+2)^4}$. Pour tout nombres réels $x$ appartenant à I,\\ $(x+2)^4>0$. Le signe de la dérivée seconde dépend de $10x-40$. On en déduit qu'il existe un point d'inflexion au point d'abscisse 4.
+	\columnbreak 
+	\begin{tikzpicture}[scale=0.7]
+		\tkzTabInit{$x$ /1, $10x-40$ /1, $f''(x)$ /1}{$-1$, 4, $8$}
+		\tkzTabLine{, -,z,+, }
+		\tkzTabLine{, -,z,+, }
+	\end{tikzpicture}
+	\end{multicols}
+	\end{minipage}
+\end{document}
